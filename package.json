@@ -1,0 +1,24 @@
+{
+  "name": "qr-code-maker",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "QR"
+  ],
+  "author": "Ananya Dhananjaya <ananya.dhananjaya1998@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@ananyadhananjaya/eslint-config-basic": "^4.1.4",
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.24.0"
+  }
+}
