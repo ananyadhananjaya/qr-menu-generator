@@ -19,6 +19,7 @@
   "devDependencies": {
     "@ananyadhananjaya/eslint-config-basic": "^4.1.4",
     "@vitejs/plugin-react": "^2.1.0",
-    "eslint": "^8.24.0"
+    "eslint": "^8.24.0",
+    "sass": "^1.55.0"
   }
 }
