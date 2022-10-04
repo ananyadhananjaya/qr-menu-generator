@@ -1,9 +1,10 @@
+import Heading from './Heading'
 import TipTapEditor from './TipTapEditor/TipTapEditor'
 
 const App = () => {
   return (
     <div>
-      <div>Hello world</div>
+      <Heading />
       <TipTapEditor />
     </div>
   )
