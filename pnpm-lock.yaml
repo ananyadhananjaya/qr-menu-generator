@@ -2,6 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ananyadhananjaya/eslint-config-basic': ^4.1.4
+  '@tiptap/extension-bold': 2.0.0-beta.199
+  '@tiptap/extension-bullet-list': 2.0.0-beta.199
+  '@tiptap/extension-document': 2.0.0-beta.199
+  '@tiptap/extension-floating-menu': 2.0.0-beta.199
+  '@tiptap/extension-heading': 2.0.0-beta.199
+  '@tiptap/extension-list-item': 2.0.0-beta.199
+  '@tiptap/extension-paragraph': 2.0.0-beta.199
+  '@tiptap/extension-text': 2.0.0-beta.199
   '@tiptap/react': 2.0.0-beta.199
   '@tiptap/starter-kit': 2.0.0-beta.199
   '@vitejs/plugin-react': ^2.1.0
@@ -12,6 +20,14 @@ specifiers:
   sass: ^1.55.0
 
 dependencies:
+  '@tiptap/extension-bold': 2.0.0-beta.199_4focsuckzeocqotdxlryrtksam
+  '@tiptap/extension-bullet-list': 2.0.0-beta.199_4focsuckzeocqotdxlryrtksam
+  '@tiptap/extension-document': 2.0.0-beta.199_4focsuckzeocqotdxlryrtksam
+  '@tiptap/extension-floating-menu': 2.0.0-beta.199_4focsuckzeocqotdxlryrtksam
+  '@tiptap/extension-heading': 2.0.0-beta.199_4focsuckzeocqotdxlryrtksam
+  '@tiptap/extension-list-item': 2.0.0-beta.199_4focsuckzeocqotdxlryrtksam
+  '@tiptap/extension-paragraph': 2.0.0-beta.199_4focsuckzeocqotdxlryrtksam
+  '@tiptap/extension-text': 2.0.0-beta.199_4focsuckzeocqotdxlryrtksam
   '@tiptap/react': 2.0.0-beta.199_la4wgmshzfaebh4rq27xtbsa3y
   '@tiptap/starter-kit': 2.0.0-beta.199
   autoprefixer: 10.4.12_postcss@8.4.17
