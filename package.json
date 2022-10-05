@@ -12,6 +12,7 @@
   "author": "Ananya Dhananjaya <ananya.dhananjaya1998@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@supabase/supabase-js": "2.0.0-rc.10",
     "@tiptap/extension-bold": "2.0.0-beta.199",
     "@tiptap/extension-bullet-list": "2.0.0-beta.199",
     "@tiptap/extension-document": "2.0.0-beta.199",
@@ -23,9 +24,11 @@
     "@tiptap/react": "2.0.0-beta.199",
     "@tiptap/starter-kit": "2.0.0-beta.199",
     "autoprefixer": "^10.4.12",
+    "nanoid": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-qr-code": "^2.0.8"
+    "react-qr-code": "^2.0.8",
+    "react-router-dom": "^6.4.1"
   },
   "devDependencies": {
     "@ananyadhananjaya/eslint-config-basic": "^4.1.4",
