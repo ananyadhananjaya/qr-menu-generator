@@ -1,6 +1,9 @@
 import Heading from './Heading'
 import TipTapEditor from './TipTapEditor/TipTapEditor'
 import QRCode from 'react-qr-code'
+import { useEffect } from 'react'
+import { redirect } from 'react-router-dom'
+import CreateMenu from './Supabase/POST/createMenu'
 
 const App = () => {
   return (
@@ -15,6 +18,7 @@ const App = () => {
         }
         viewBox={`0 0 256 256`}
       />
+      <CreateMenu />
     </div>
   )
 }
