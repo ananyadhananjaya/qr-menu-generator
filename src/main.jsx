@@ -9,12 +9,14 @@ import {
 import { customAlphabet } from 'nanoid'
 import App from './App'
 import './index.scss'
+import EditMode from './EditMode'
+import ViewMode from './ViewMode'
 
 const nanoid = customAlphabet('qwertyuioplkjhgfdsazxcvbnm', 6)
 const random = nanoid()
 
 const loader = async () => {
-  return redirect(`/menu/editSave/${random}`)
+  return redirect(`/menu/editMode/${random}`)
 }
 const router = createBrowserRouter([
   {
@@ -22,8 +24,12 @@ const router = createBrowserRouter([
     loader: loader
   },
   {
-    element: <App />,
-    path: '/menu/editSave/*'
+    element: <EditMode />,
+    path: '/menu/editMode/*'
+  },
+  {
+    element: <ViewMode />,
+    path: '/menu/viewMode/*'
   }
 ])
 
