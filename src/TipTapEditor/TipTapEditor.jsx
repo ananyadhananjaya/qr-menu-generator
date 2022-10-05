@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react'
 import '../index.scss'
 
 const TipTapEditor = () => {
+  const [value, setValue] = useState('')
   const editor = useEditor({
     extensions: [
       Document,
@@ -30,6 +31,28 @@ const TipTapEditor = () => {
       }
     },
     content: '<p>Drop your content here</p>'
+  })
+
+  const editorTest = useEditor({
+    extensions: [
+      Document,
+      Paragraph,
+      Text,
+      ListItem,
+      BulletList,
+      Heading.configure({
+        levels: [1, 2, 3],
+        HTMLAttributes: {
+          class: 'custom-heading-class'
+        }
+      })
+    ],
+    editorProps: {
+      attributes: {
+        class: 'custom-input-class'
+      }
+    },
+    content: value
   })
 
   const [isEditable, setIsEditable] = useState(true)
@@ -91,6 +114,23 @@ const TipTapEditor = () => {
         </FloatingMenu>
       )}
       <EditorContent editor={editor} />
+      <button
+        onClick={() => {
+          console.log(editor.getJSON())
+          editorTest.commands.setContent(editor.getJSON())
+        }}
+      >
+        Get Content
+      </button>
+      <div
+        style={{
+          height: 'auto',
+          margin: '0 auto',
+          maxWidth: 64,
+          width: '100%'
+        }}
+      ></div>
+      <EditorContent editor={editorTest} />
     </>
   )
 }
