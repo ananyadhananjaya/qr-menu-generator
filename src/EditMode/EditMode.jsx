@@ -10,6 +10,7 @@ import QRCode from 'react-qr-code'
 import CreateMenu from '../Supabase/POST/createMenu'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { updateMenu } from '../Supabase/UPDATE/updateMenu'
 
 const EditMode = () => {
   const { hash } = useParams()
@@ -45,6 +46,11 @@ const EditMode = () => {
         viewBox={`0 0 256 256`}
       />
       {editor && <CreateMenu hash={hash} content={editor.getJSON()} />}
+      {editor && (
+        <button onClick={() => updateMenu(hash, editor.getJSON())}>
+          Update
+        </button>
+      )}
     </div>
   )
 }
