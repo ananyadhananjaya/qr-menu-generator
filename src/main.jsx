@@ -11,6 +11,7 @@ import App from './App'
 import './index.scss'
 import EditMode from './EditMode'
 import ViewMode from './ViewMode'
+import { handleGetMenus } from './Supabase/GET/getMenus'
 
 const nanoid = customAlphabet('qwertyuioplkjhgfdsazxcvbnm', 6)
 const random = nanoid()
@@ -25,11 +26,15 @@ const router = createBrowserRouter([
   },
   {
     element: <EditMode />,
-    path: '/menu/editMode/*'
+    path: '/menu/editMode/:hash'
   },
   {
     element: <ViewMode />,
-    path: '/menu/viewMode/*'
+    path: '/menu/viewMode/:hash',
+    loader: ({ params }) => {
+      console.log(params)
+      return handleGetMenus(params.hash)
+    }
   }
 ])
 
