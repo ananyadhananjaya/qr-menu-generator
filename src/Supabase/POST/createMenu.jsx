@@ -1,31 +1,30 @@
 // Initialize the JS client
 import { createClient } from '@supabase/supabase-js'
 
-const CreateMenu = () => {
+const CreateMenu = (props) => {
+  const { content, hash } = props
   const supabseUrl = import.meta.env.VITE_SUPABASE_URL
   const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
   const supabase = createClient(supabseUrl, anonKey)
 
   const handleGet = async () => {
-    const { data } = await supabase
-      .from('menuList')
-      .select()
-      .eq('hash', 'test12f34')
+    const { data } = await supabase.from('menuList').select().eq('hash', hash)
     console.log(data)
   }
 
   const handleInsert = async () => {
     const { data, error } = await supabase
       .from('menuList')
-      .insert([{ hash: 'test123', menus: { test: 'hello world' } }])
+      .insert([{ hash: hash, menus: content }])
 
-    console.log(data, error)
+    console.log(content, data, error)
   }
 
   return (
     <div>
       <button onClick={handleGet}>Get</button>
       <button onClick={handleInsert}>Insert</button>
+      
     </div>
   )
 }
