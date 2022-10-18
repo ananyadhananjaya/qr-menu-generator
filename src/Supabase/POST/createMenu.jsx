@@ -24,7 +24,6 @@ const CreateMenu = (props) => {
     <div>
       <button onClick={handleGet}>Get</button>
       <button onClick={handleInsert}>Insert</button>
-      
     </div>
   )
 }

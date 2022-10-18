@@ -11,6 +11,7 @@ import CreateMenu from '../Supabase/POST/createMenu'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { updateMenu } from '../Supabase/UPDATE/updateMenu'
+import { initialContent } from '../../utilities/constants'
 
 const EditMode = () => {
   const { hash } = useParams()
@@ -33,7 +34,7 @@ const EditMode = () => {
         class: 'custom-input-class'
       }
     },
-    content: '<p>Drop your content here</p>'
+    content: initialContent
   })
 
   return (
@@ -51,6 +52,7 @@ const EditMode = () => {
           Update
         </button>
       )}
+      <button onClick={() => console.log(editor.getHTML())}>Consol log</button>
     </div>
   )
 }

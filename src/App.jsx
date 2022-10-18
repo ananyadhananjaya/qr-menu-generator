@@ -2,6 +2,7 @@ import Heading from './Heading'
 import TipTapEditor from './TipTapEditor/TipTapEditor'
 import QRCode from 'react-qr-code'
 import CreateMenu from './Supabase/POST/createMenu'
+import { initialContent } from '../utilities/constants'
 
 const App = () => {
   return (

@@ -1,0 +1,2 @@
+export const initialContent =
+  '<h2 class="custom-heading-class">🥞 Breakfast</h2><h3 class="custom-heading-class">Eggs Benedict | $7.99</h3><p> Two halves of an English muffin, each topped with Canadian bacon, a poached egg, and hollandaise sauce</p><h3 class="custom-heading-class">Breakfast Burrito | $8.99</h3><p>Eggs, potatoes, wrapped in a tortilla</p><h3 class="custom-heading-class">Acai Bowl 🌱 | $6.99</h3><p>Açaí palm fruit berries with granola and fruit</p>'
