@@ -50,7 +50,7 @@ const TipTapEditor = ({ editor, content }) => {
           checked={isEditable}
           onChange={() => setIsEditable(!isEditable)}
         />
-        Editable
+        Check to Edit
       </div>
       {editor && (
         <FloatingMenu editor={editor} tippyOptions={{ duration: 100 }}>

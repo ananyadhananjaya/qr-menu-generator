@@ -12,6 +12,7 @@ import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { updateMenu } from '../Supabase/UPDATE/updateMenu'
 import { initialContent } from '../../utilities/constants'
+import '../../styles/editPage.scss'
 
 const EditMode = () => {
   const { hash } = useParams()
@@ -39,6 +40,13 @@ const EditMode = () => {
 
   return (
     <div>
+      <h1 className="main-heading">
+        Create a digital QR code menu/anything you want it to be, for free!
+      </h1>
+      <h4 className="main-subHeader">
+        Let your restaurant visitors scan and see your menu with their
+        smartphone, limit the spread of the Coronavirus and increase hygiene.
+      </h4>
       <TipTapEditor editor={editor} />
       <QRCode
         size={256}

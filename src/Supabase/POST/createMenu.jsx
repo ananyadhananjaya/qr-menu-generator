@@ -1,6 +1,6 @@
 // Initialize the JS client
 import { createClient } from '@supabase/supabase-js'
-import '../../../styles/button.scss'
+import '../../../styles/editPage.scss'
 
 const CreateMenu = (props) => {
   const { content, hash } = props
