@@ -1,5 +1,6 @@
 // Initialize the JS client
 import { createClient } from '@supabase/supabase-js'
+import '../../../styles/button.scss'
 
 const CreateMenu = (props) => {
   const { content, hash } = props
@@ -23,7 +24,9 @@ const CreateMenu = (props) => {
   return (
     <div>
       <button onClick={handleGet}>Get</button>
-      <button onClick={handleInsert}>Insert</button>
+      <button className="button-add-menu" onClick={handleInsert}>
+        Insert
+      </button>
     </div>
   )
 }
