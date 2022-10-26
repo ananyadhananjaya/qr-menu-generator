@@ -51,7 +51,7 @@ const EditMode = () => {
       <QRCode
         size={256}
         style={{ height: '200px', maxWidth: '100%', width: '100px' }}
-        value={''}
+        value={hash}
         viewBox={`0 0 256 256`}
       />
       {editor && <CreateMenu hash={hash} content={editor.getJSON()} />}
