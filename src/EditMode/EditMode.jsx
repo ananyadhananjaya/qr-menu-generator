@@ -38,6 +38,7 @@ const EditMode = () => {
     content: initialContent
   })
 
+  console.log(`https://qrcodeforfree.netlify.app/menu/viewMode/${hash}`)
   return (
     <div>
       <h1 className="main-heading">
@@ -51,7 +52,7 @@ const EditMode = () => {
       <QRCode
         size={256}
         style={{ height: '200px', maxWidth: '100%', width: '100px' }}
-        value={hash}
+        value={`https://qrcodeforfree.netlify.app/menu/viewMode/${hash}`}
         viewBox={`0 0 256 256`}
       />
       {editor && <CreateMenu hash={hash} content={editor.getJSON()} />}
