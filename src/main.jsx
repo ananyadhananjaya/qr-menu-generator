@@ -12,6 +12,7 @@ import './index.scss'
 import EditMode from './EditMode'
 import ViewMode from './ViewMode'
 import { handleGetMenus } from './Supabase/GET/getMenus'
+import { Check } from './Check/Check'
 
 const nanoid = customAlphabet('qwertyuioplkjhgfdsazxcvbnm', 6)
 const random = nanoid()
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       console.log(params)
       return handleGetMenus(params.hash)
     }
+  },
+  {
+    element: <Check />,
+    path: '/menu/check'
   }
 ])
 
