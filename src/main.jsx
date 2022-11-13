@@ -4,6 +4,7 @@ import {
   RouterProvider,
   Route,
   createBrowserRouter,
+  createHashRouter,
   redirect
 } from 'react-router-dom'
 import { customAlphabet } from 'nanoid'
@@ -20,7 +21,7 @@ const random = nanoid()
 const loader = async () => {
   return redirect(`/menu/editMode/${random}`)
 }
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     loader: loader
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
   },
   {
     element: <Check />,
-    path: 'menu/check'
+    path: '/menu/check'
   }
 ])
 
