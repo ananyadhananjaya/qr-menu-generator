@@ -35,9 +35,8 @@ const ViewMode = () => {
 
   return (
     <div>
-      {/* <CreateMenu />
-      <EditorContent editor={editor} /> */}
-      Check
+      <CreateMenu />
+      <EditorContent editor={editor} />
     </div>
   )
 }
