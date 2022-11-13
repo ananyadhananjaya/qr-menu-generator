@@ -39,7 +39,7 @@ const router = createBrowserRouter([
   },
   {
     element: <Check />,
-    path: '/menu/check'
+    path: 'menu/check'
   }
 ])
 
